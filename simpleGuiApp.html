@@ -1,0 +1,62 @@
+<html>
+<head>
+    <head>
+        <meta charset="utf-8" >
+        <title>Simple Calc</title> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <style>
+      #navbar ul{
+        display: none;
+        background-color: #f90;
+        position: absolute;
+        top: 100%;
+      }
+
+      #navbar li:hover ul { display: block; }
+      #navbar, #navbar ul{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      #navbar {
+        height: 30px;
+        background-color: #666;
+        padding-left: 25px;
+        min-width: 470px;
+      }
+      #navbar li {
+        float: left;
+        position: static;
+        height: 100%;
+      }
+      #navbar li a {
+        display: block;
+        padding: 6px;
+        width: 100px;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+      }
+      #navbar ul li { float: none; }
+      #navbar li:hover { background-color: #f90; }
+      #navbar ul li:hover { background-color: #666; }
+    </style>
+    </head>
+</head>
+<body>
+    
+        <ul id="navbar">
+                <li><a href="#">File</a></li>
+                <ul>
+                  <li><a href="#">Open Folder</a></li>
+                </ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#" id="liExit">Exit</a></li>
+        </ul>
+    
+    <input type="button" style="width: 125px; margin: 0 auto;" value="Add ( + )" id="add"> 
+    <input type="number" style="width: 250px; margin: 0 auto;" id="output1" disabled>
+ 
+
+</body>
+</html>
